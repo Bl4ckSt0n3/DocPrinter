@@ -1,0 +1,27 @@
+tr {
+    height: 8vh;
+}
+// .table-responsive {
+//     max-height: 750px;
+// }
+.card-row {
+    // align-items: stretch;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: nowrap;
+    // overflow-x: auto;
+    // overflow-y: auto;
+    // max-height: 60vh;
+    // display: flex;
+    // overflow-y: scroll;
+}
+.card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.ant-select {
+    min-width: 300px !important;
+}
+.ant-btn {
+    min-width: 300px !important;
+}

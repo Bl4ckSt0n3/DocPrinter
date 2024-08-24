@@ -1,0 +1,66 @@
+.navbar {
+    // background: linear-gradient(135deg,#0143a3,#0273d4);
+    // background-color: #18354c;
+    min-height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 10px -5px;
+}
+.navbar-brand {
+    font-style: initial;
+}
+.logout {
+    text-decoration: none;
+    color: #fff;
+    background-color: none;
+}
+.logout:hover {
+    color: rgb(255, 192, 56);
+}
+.app-header {
+    position: relative;
+    height: 70px;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,21,41,.08);
+    background-color: #001529;
+}
+.sidebar-logo {
+    position: relative;
+    height: 64px;
+    padding-left: 30px;
+    overflow: hidden;
+    line-height: 64px;
+    background: #001529;
+    transition: all .3s;
+  }
+
+ h1 {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
+    vertical-align: middle;
+  }
+  
+  .sidebar-logo img {
+    display: inline-block;
+    height: 42px;
+    width: 40px;
+    vertical-align: middle;
+  }
+  a {
+    text-decoration: none;
+  }
+  .drop-menu {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  li {
+    font-size: 18px;
+  }
+  ul {
+    padding: 4%;
+    min-width:  145px !important;
+  }

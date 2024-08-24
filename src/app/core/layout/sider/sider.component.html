@@ -1,0 +1,22 @@
+
+<nz-sider nzWidth="350px" nzTheme="light" >  <!--*ngIf="isLoggedIn$ | async as isLoggedIn"-->
+    <ul nz-menu nzTheme="dark" nzMode="inline" class="sider-menu">
+        <li nz-menu-item>
+          <fa-icon class="ms-3" [icon]="faHome"></fa-icon>
+          <a [routerLink]="'pages/offers'"><span class="ms-2">Offer Page</span></a> 
+        </li>
+        <li nz-menu-item>
+          <fa-icon class="ms-3" [icon]="faFileInvoice"></fa-icon>
+          <a [routerLink]="'pages/list'"><span class="ms-3">Offer List</span></a>
+        </li>
+        <li nz-menu-item >
+          <fa-icon class="ms-3" [icon]="faUser"></fa-icon>
+          <span class="ms-3">Profile</span>
+        </li>
+    </ul>  
+</nz-sider>
+
+
+
+  
+

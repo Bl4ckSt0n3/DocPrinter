@@ -1,0 +1,51 @@
+<ng-container>
+    <div class="row justify-content-center p-5">
+        <div class="col-md-12">
+            <div class="row mt-2">
+                <h2 style="font-weight: 600;"><span><fa-icon [icon]="faFileInvoice"></fa-icon></span> {{title}} </h2>
+            </div>
+        </div>
+        <nz-divider></nz-divider>
+        <div class="col-md-12 mt-3">
+
+            <form class="row g-3" [formGroup]="docForm">
+
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Ad</label>
+                    <input type="text" class="form-control" formControlName="name" id="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="secondName" class="form-label">Soyad</label>
+                    <input type="text" class="form-control" formControlName="secondName" id="secondName">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">TC Kimlik No: </label>
+                    <input type="number" class="form-control" formControlName="identity">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Date</label>
+                    <nz-date-picker formControlName="date" (ngModelChange)="onChange($event)" style="width: 100%;"></nz-date-picker>
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Adres</label>
+                    <textarea rows="2" type="text" class="form-control" formControlName="address" id="inputAddress" placeholder="1234 Main St"></textarea>
+                </div>
+                <div class="col-md-12">
+                    <label for="topic" class="form-label">Konu</label>
+                    <input type="text" class="form-control" formControlName="topic" id="topic">
+                </div>
+                <div class="col-12">
+                    <label for="description" class="form-label">Açıklama</label>
+                    <textarea rows="3" type="text" class="form-control" formControlName="description" id="description" placeholder="Olay Açıklaması"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" (click)="save()">Yazdir</button>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+</ng-container>

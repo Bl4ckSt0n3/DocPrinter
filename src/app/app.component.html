@@ -1,0 +1,21 @@
+
+<nz-layout>
+  <nz-header>
+    <app-header [title]="title"></app-header>
+  </nz-header>
+  <nz-layout>
+    <!-- <nz-sider nzWidth="350px" nzTheme="light" *ngIf="isCollapsed==true">
+      <app-sider></app-sider>
+    </nz-sider> -->
+    <nz-layout class="inner-layout">
+      <nz-content>
+        <router-outlet></router-outlet>
+      </nz-content>
+      <nz-footer>
+        <div class="mt-3 footer">
+          <app-footer></app-footer>
+        </div>
+      </nz-footer>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>

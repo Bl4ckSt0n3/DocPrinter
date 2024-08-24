@@ -1,0 +1,16 @@
+
+<div class="col-md-12">
+  <div class="row mt-2">
+      <h2 style="font-weight: 600;"><span></span> Dilekçeler </h2>
+  </div>
+</div>
+<div class="col-md-12">
+  <div class="list" *ngFor="let item of docData">
+    <div class="card item" (click)="redirect(item.url)">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+        </div>
+    </div>
+  </div>
+</div>

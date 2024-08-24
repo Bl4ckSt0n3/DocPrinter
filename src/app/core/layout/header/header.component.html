@@ -1,0 +1,19 @@
+<div class="app-header navbar justify-content-between">
+    <div class="sidebar-logo">
+        <a href="https://ng.ant.design/" target="_blank">
+            <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+        </a>
+        <h1><a routerLink="/pages/movies" style="color: #fff;">{{ title }}</a></h1> 
+    </div>
+    <a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu" class="me-5 drop-menu">
+        Dilekçeler
+        <span nz-icon nzType="down"></span>
+      </a>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu>
+            <li nz-menu-item (click)="redirect('pages/create')">Trafik Cezasi</li>
+            <li nz-menu-divider></li>
+            <li nz-menu-item > Diğer Dilekçeler </li>
+        </ul>
+      </nz-dropdown-menu>
+</div>

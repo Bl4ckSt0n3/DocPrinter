@@ -1,0 +1,27 @@
+.row {
+    --bs-gutter-x: 0 !important;
+}
+.not-found {
+    text-align: center;
+    animation: rotater 3s linear infinite;
+}
+p {
+    font-size: 125px;
+    font-weight: bold;
+    color: #18354c;
+}
+h1 {
+    font-size: 50px;
+    color: #18354c;
+    font-weight: 800;
+    text-align: center;
+}
+
+@keyframes rotater {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
